@@ -1,0 +1,146 @@
+.idols_cards {
+  
+  color:  #fff;
+  background-color: #242424;
+
+
+}
+
+.idols_cards h1 {
+  text-align: left;
+  color:  #fff;
+  position: absolute;
+  z-index: 1;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0, 1) 100%);
+  width: 100%;
+
+
+
+
+}
+
+.idols_cards__container {
+  
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 auto;
+ 
+}
+
+.idols_cards__wrapper {
+  position: relative;
+  width: 100%;
+
+}
+
+.idols_cards__items {
+  margin-bottom: 24px;
+
+}
+
+.idols_cards__item {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  align-items: center;
+}
+.fa{
+  font-size:16px;
+  color:#52baff;
+}
+.idols_cards__item__link {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  text-decoration: none;
+
+  
+}
+
+.idols_cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+  overflow: hidden;
+  height: 620px;
+  filter: grayscale(80%);
+
+}
+
+.idols_fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
+
+.idols_cards__item__pic-wrap::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: calc((100%) - 0px);
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  box-sizing: border-box;
+  
+
+
+}
+
+
+
+
+.idols_cards__item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+.idols_cards__item__img:hover {
+  content: attr(data-category);
+  transform: scale(1.1);
+}
+
+.idols_cards__item__info {
+  padding: 20px 30px 30px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.idols_cards__item__text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .idols_content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .idols_cards__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .idols_cards__item {
+    margin-bottom: 2rem;
+  }
+}
